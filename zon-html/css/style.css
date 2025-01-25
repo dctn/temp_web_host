@@ -30,7 +30,9 @@
 * {
      box-sizing: border-box !important;
 }
-
+#test{
+     width: 200px;
+}
 .container {
      max-width: 1170px;
 }
@@ -872,11 +874,14 @@ ul.infomaco li a {
 .footer:before {
      position: absolute;
      content: "";
-     background: url(../images/footer_be.png);
-     width: 344px;
-     height: 157px;
+     background: url(../real\ img/side2.png);
+     background-position: center;
+     background-size: cover;
      background-repeat: no-repeat;
-     top: 0;
+     width: 344px;
+     height: 357px;
+     background-repeat: no-repeat;
+     top: -10%;
      margin: 0 auto;
      left: 0;
      right: 0;
@@ -885,7 +890,7 @@ ul.infomaco li a {
 .footer:after {
      position: absolute;
      content: "";
-     background: url(../images/footer_af.png);
+     background: url(../real\ img/side.png);
      width: 177px;
      height: 154px;
      background-repeat: no-repeat;

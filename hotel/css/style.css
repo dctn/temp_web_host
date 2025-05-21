@@ -5,6 +5,10 @@
 * License: https://creativecommons.org/licenses/by/3.0/
 */
 
+.whatsapp-btn {
+    color: #5ddf29;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: #fff;

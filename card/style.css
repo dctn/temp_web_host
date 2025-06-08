@@ -1,25 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-
-:root{
-    --standard_width: 425px;
+:root {
+    --standard_width: 390px;
     --orange_color: orange;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: 'Poppins', sans-serif;
 }
 
-h2{
+h2 {
     font-size: 2rem;
     margin: 10px 0;
 }
 
-.btn{
+.btn {
     display: inline-block;
     background-color: var(--orange_color);
     text-decoration: none;
@@ -33,23 +30,22 @@ h2{
     text-transform: capitalize;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #B1832EFF;
     transform: translateY(-5px);
-
 }
 
-.flex_center{
+.flex_center {
     display: flex;
     align-items: center;
 }
 
-.container{
+.container {
     max-width: calc(var(--standard_width) - 50px);
     width: 100%;
 }
 
-.main_card{
+.main_card {
     width: 100vw;
     max-width: var(--standard_width);
     margin: 0 auto;
@@ -59,9 +55,7 @@ h2{
     flex-direction: column;
     align-items: center;
     padding-top: 5rem;
-
     animation: gradientBG 15s ease infinite;
-
 }
 
 @keyframes gradientBG {
@@ -76,7 +70,7 @@ h2{
     }
 }
 
-.profile{
+.profile {
     background-color: white;
     max-width: calc(var(--standard_width) - 50px);
     display: flex;
@@ -88,13 +82,13 @@ h2{
     border-radius: 1rem;
     position: relative;
     overflow: hidden;
-
 }
 
-.profile_img{
+.profile_img {
     z-index: 2;
 }
-.profile_img::before{
+
+.profile_img::before {
     content: '';
     background-color: var(--orange_color);
     position: absolute;
@@ -106,7 +100,7 @@ h2{
     rotate: -5deg;
 }
 
-.title_div{
+.title_div {
     margin: 1rem 0;
     border-radius: 1rem;
     text-align: center;
@@ -115,8 +109,7 @@ h2{
     text-transform: capitalize;
 }
 
-
-.icon{
+.icon {
     margin-left: 5px;
     rotate: 60deg;
     transition: 0.3s;
@@ -129,78 +122,77 @@ h2{
     border-radius: 1rem;
 }
 
-.contact h2{
+.contact h2 {
     font-size: 1.5rem;
     color: darkgrey;
 }
 
-.span{
+.span {
     color: black;
 }
 
-.contact_us .flex_center{
+.contact_us .flex_center {
     gap: 1rem;
     justify-content: flex-start;
 }
-.contact_us .flex_center .right_col{
+
+.contact_us .flex_center .right_col {
     justify-self: flex-end;
 }
 
+
 /* images */
+
 .images {
     display: grid;
-    grid-template-areas:
-"session session"
-"invoice card"
-"phone phone"
-"hero terminal";
+    grid-template-areas: "session session" "invoice card" "phone phone" "hero terminal";
     grid-row-gap: 1rem;
     grid-column-gap: 1rem;
     margin-top: 2rem;
 }
 
-.images img{
+.images img {
     width: 100%;
     border-radius: 1rem;
     transition: 0.3s;
 }
 
-.images img:hover{
+.images img:hover {
     transform: scale(1.1);
     box-shadow: 1px 1px 100px black;
 }
 
-#phone{
+#phone {
     grid-area: phone;
 }
 
-#card{
+#card {
     grid-area: card;
 }
 
-#hero{
+#hero {
     grid-area: hero;
 }
 
-#invoice{
+#invoice {
     grid-area: invoice;
 }
 
-#terminal{
+#terminal {
     grid-area: terminal;
 }
 
-#session{
+#session {
     grid-area: session;
 }
 
-.links_section .links{
+.links_section .links {
     background-color: white;
     padding: 1rem;
     border-radius: 1rem;
 }
 
-.links_section .links ul{
+.links_section .links ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,28 +200,31 @@ h2{
     text-transform: capitalize;
 }
 
-.links_section .links ul li{
+.links_section .links ul li {
     list-style: none;
     padding: 1rem;
     font-size: 2rem;
 }
 
-.links_section .links ul li:hover{
+.links_section .links ul li:hover {
     text-decoration: underline;
 }
 
-.links_section .links ul li a{
+.links_section .links ul li a {
     color: black;
     text-decoration: none;
 }
 
+
 /* add to contact */
-.add_to_contact{
+
+.add_to_contact {
     position: sticky;
     bottom: 5%;
     animation: pop 1s infinite ease-in-out;
 }
-.add_to_contact a{
+
+.add_to_contact a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -243,16 +238,16 @@ h2{
     text-decoration: none;
 }
 
-#plus_icon{
+#plus_icon {
     font-size: 2rem;
 }
 
 @keyframes pop {
-    0%,100%{
+    0%,
+    100% {
         transform: scale(1);
     }
-
-    50%{
+    50% {
         transform: scale(1.05);
     }
 }

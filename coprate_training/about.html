@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="about.css">
+    <title>About Us - Your IT Firm</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease;
+        }
+        body:hover 
+        {
+            background-color: #f0f8ff;
+        }
+        header 
+        {
+            background: #0078d7;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+        header:hover 
+        {
+            background: #005bb5;
+        }
+        header h1 
+        {
+            margin: 0;
+            font-size: 2.5em;
+            animation: fadeIn 1s ease;
+        }
+        main 
+        {
+            width: 90%;
+            max-width: 1100px;
+            margin: 20px auto;
+            display: grid;
+            gap: 20px;
+        }
+        section 
+        {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section:hover 
+        {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h2 
+        {
+            color: #0078d7;
+            margin-top: 0;
+            position: relative;
+            animation: slideIn 0.5s ease;
+        }
+        @keyframes fadeIn 
+        {
+            from 
+            { 
+                opacity: 0; 
+            }
+            to 
+            { 
+                opacity: 1; 
+            }
+        }
+        @keyframes slideIn 
+        {
+            from 
+            {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to 
+            {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        footer 
+        {
+            text-align: center;
+            padding: 10px 0;
+            background: #0078d7;
+            color: #fff;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+        footer:hover 
+        {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+
+    <nav>
+        <div class="nav_text">
+            <h1>company name</h1>
+        </div>
+        <ul class="main_menu">
+            <li class="nav_item"><a href="index.html">Home</a></li>
+            <!-- <li class="nav_item"><a href="">courese</a></li> -->
+            <li class="nav_item"><a href="">about us</a></li>
+            <li class="nav_item"><a href="" id="contact_btn">contact</a></li>
+        </ul>
+        <i class="ri-menu-line " id="menu" onclick="toggle_menu()" ></i>
+    </nav>
+
+
+
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Who We Are</h2>
+            <p>Name is a leading IT solutions provider with a team of experienced professionals passionate about delivering tailored technology services. From small startups to large enterprises, we are committed to understanding our clients' unique challenges and designing solutions that drive measurable results.</p>
+        </section>
+        <section>
+            <h2>What We Do</h2>
+            <article>
+                <ul>
+                    <li><strong>Custom Software Development</strong>: Building scalable, secure, and user-friendly applications.</li>
+                    <li><strong>IT Consulting</strong>: Offering expert advice to optimize your technology investments.</li>
+                    <li><strong>Cloud Solutions</strong>: Ensuring seamless migration, integration, and management of cloud-based systems.</li>
+                    <li><strong>Cybersecurity</strong>: Protecting your data and infrastructure with state-of-the-art security measures.</li>
+                    <li><strong>Managed IT Services</strong>: Providing comprehensive support to keep your operations running smoothly.</li>
+                    <li><strong>Data Analytics</strong>: Leveraging insights to drive informed decision-making.</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <h2>Our Values</h2>
+            <ul>
+                <li><strong>Innovation</strong>: We embrace creativity and forward-thinking to deliver cutting-edge solutions.</li>
+                <li><strong>Integrity</strong>: Trust and transparency are at the core of our client relationships.</li>
+                <li><strong>Collaboration</strong>: Working together with our clients, we achieve extraordinary results.</li>
+                <li><strong>Excellence</strong>: We strive for the highest standards in every project we undertake.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li><strong>Proven Expertise</strong>: A track record of delivering successful projects across diverse industries.</li>
+                <li><strong>Customer-Centric Approach</strong>: Your goals are our priority, and we tailor our services to meet your needs.</li>
+                <li><strong>Agile Methodology</strong>: Ensuring flexibility and adaptability in our project execution.</li>
+                <li><strong>Global Reach</strong>: Serving clients locally and internationally with equal dedication.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Our Vision</h2>
+            <p>To be a trusted global partner in technology, empowering businesses to achieve their full potential through innovative IT solutions.</p>
+        </section>
+        <section>
+            <h2>Our Mission</h2>
+            <p>To deliver exceptional technology services that enable organizations to thrive in a rapidly evolving digital landscape.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Name. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="about.js"></script>
+</body>
+</html>

@@ -9,12 +9,11 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-<!--    <link href="img/favicon.ico" rel="icon">-->
+    <!--    <link href="img/favicon.ico" rel="icon">-->
     <link href="own_img/logo.png" rel="icon">
 
 
     <!-- Google Web Fonts -->
-     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap"
@@ -33,6 +32,18 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .product {
+            margin: 5px 0;
+            padding: 8px;
+            border: 1px solid #ccc;
+            list-style: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -80,19 +91,20 @@
             <a href="index.html" class="nav-item nav-link active">Home</a>
             <a href="about.html" class="nav-item nav-link">About</a>
             <a href="service.html" class="nav-item nav-link">Services</a>
-<!--            <div class="nav-item dropdown">-->
-<!--                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>-->
-<!--                <div class="dropdown-menu bg-light m-0">-->
-<!--                    <a href="project.html" class="dropdown-item">Projects</a>-->
-<!--                    <a href="feature.html" class="dropdown-item">Features</a>-->
-<!--                    <a href="team.html" class="dropdown-item">Our Team</a>-->
-<!--                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>-->
-<!--                    <a href="404.html" class="dropdown-item">404 Page</a>-->
-<!--                </div>-->
-<!--            </div>-->
+            <!--            <div class="nav-item dropdown">-->
+            <!--                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>-->
+            <!--                <div class="dropdown-menu bg-light m-0">-->
+            <!--                    <a href="project.html" class="dropdown-item">Projects</a>-->
+            <!--                    <a href="feature.html" class="dropdown-item">Features</a>-->
+            <!--                    <a href="team.html" class="dropdown-item">Our Team</a>-->
+            <!--                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>-->
+            <!--                    <a href="404.html" class="dropdown-item">404 Page</a>-->
+            <!--                </div>-->
+            <!--            </div>-->
             <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
-        <a href="" class="btn btn-primary px-3 d-none d-lg-block">Get A Quote</a>
+        <a href="https://wa.me/919841145498?text=Hello%2C+I+am+interested+in+your+products"
+           class="btn btn-primary px-3 d-none d-lg-block">Get A Quote</a>
     </div>
 </nav>
 <!-- Navbar End -->
@@ -110,11 +122,12 @@
                             <div class="col-lg-10 text-start">
                                 <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">24 Years of
                                     Working Experience</p>
-                                <h1 class="display-1 text-white mb-5 animated slideInRight">Reliable Water Heating
-                                    Solutions for Every Home and Business
+                                <h1 class="display-1 text-white mb-5 animated slideInRight">The Venus Heat Pump Water
+                                    Heater
 
                                 </h1>
-                                <a href="" class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
+                                <a href="https://wa.me/919841145498?text=Hello%2C+I+am+interested+in+your+products"
+                                   class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
                             </div>
                         </div>
                     </div>
@@ -128,10 +141,11 @@
                             <div class="col-lg-10 text-start">
                                 <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">24 Years of
                                     Working Experience</p>
-                                <h1 class="display-1 text-white mb-5 animated slideInRight">The Best Reliable
-                                    Solution and Experience the Future of Water Heating
+                                <h1 class="display-1 text-white mb-5 animated slideInRight">The Venus Heat Pump Water
+                                    Heater
                                 </h1>
-                                <a href="" class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
+                                <a href="https://wa.me/919841145498?text=Hello%2C+I+am+interested+in+your+products"
+                                   class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
                             </div>
                         </div>
                     </div>
@@ -223,6 +237,135 @@
 <!-- About End -->
 
 
+<!-- products starts -->
+<div>
+    <h1 style="text-align: center; text-transform: capitalize">our products</h1>
+    <div id="category-buttons" class="product_btns">
+
+        <button onclick="filterProducts('all')">All Type of Pump</button>
+        <button onclick="filterProducts('Domestic')">Domestic Heat Pump</button>
+        <button onclick="filterProducts('Commercial')">Commercial Heat Pump</button>
+        <button onclick="filterProducts('All_In')">All In One Heat Pump</button>
+    </div>
+    <!-- 
+    <ul id="product-list">
+      <li class="product shoes">Nike Air Max</li>
+      <li class="product bags">Leather Handbag</li>
+      <li class="product accessories">Sunglasses</li>
+      <li class="product shoes">Adidas Runner</li>
+      <li class="product bags">Backpack</li>
+      <li class="product accessories">Watch</li>
+    </ul> -->
+
+    <div class="product_list" id="product-list">
+
+        <div class="product_card product All_In">
+            <div class="img">
+                <img src="own_img/pro_1.jpg" alt="">
+            </div>
+            <h2>All In One Heat Pump</h2>
+            <p>
+                All In One Heat Pump
+                ALL IN ONE HEAT PUMP WATER HEATER (Wi-Fi) Heat is sourced from ambient air to heat water to 75°C. Get
+                non-stop hot water anywhere in the house while saving as much as 75-80% on your heating costs.
+            </p>
+            <a class="pro_btn" href="https://wa.me/919841145498" target="_blank">Chat on WhatsApp</a>
+
+        </div>
+
+        <div class="product_card product Domestic">
+            <div class="img">
+                <img src="own_img/c_pro_2.png" alt="">
+            </div>
+            <h2>
+                Domestic Heat Pump</h2>
+            <p>
+                Venus introduces Heat Pump Water Heaters for the first time in India. Using renewable energy heat
+                sources
+                from the ambient air to heat water, these heaters can provide hot water round-the-clock and throughout
+                the
+                year in an energy-efficient and affordable way. Venus Heat Pump Water Heaters are the right solution for
+                domestic hot water applications.
+            </p>
+            <a class="pro_btn" href="https://wa.me/919841145498" target="_blank">Chat on WhatsApp</a>
+
+        </div>
+
+        <div class="product_card product Commercial">
+            <div class="img">
+                <img src="own_img/c_pro_3.png" alt="">
+            </div>
+            <h2>Commercial Heat Pump
+            </h2>
+            <p>
+                Venus introduces Heat Pump Water Heaters in India. Using renewable energy heat sources from the ambient
+                air
+                to heat water, these heaters can provide hot water round-the-clock and throughout the year in an
+                energy-efficient and affordable way. Venus Heat Pump Water Heaters are the right solution for commercial
+                hot
+                water applications.
+            </p>
+            <a class="pro_btn" href="https://wa.me/919841145498" target="_blank">Chat on WhatsApp</a>
+
+        </div>
+
+        <div class="product_card product All_In">
+            <div class="img">
+                <img src="own_img/c_pro_4.png" alt="">
+            </div>
+            <h2>
+                All In One Heat Pump
+            </h2>
+            <p>
+                Venus Introduces, the Compact and Space saving, All in One Heat Pump. Using renewable energy, heat is
+                sourced from the ambient air to heat water. This 200Litre Capacity Heat Pump is ideal to provide non
+                stop
+                hot water anywhere in the house, while saving as much as 75-80% on your heating costs.
+            </p>
+            <a class="pro_btn" href="https://wa.me/919841145498" target="_blank">Chat on WhatsApp</a>
+
+        </div>
+
+        <div class="product_card product Commercial">
+            <div class="img">
+                <img src="own_img/c_pro_5.png" alt="">
+            </div>
+            <h2>High Temperature Heat Pump
+            </h2>
+            <p>
+                Venus introduces high temperature heat pump water heaters an energy efficient means of heating water to
+                temperatures as high as 80 deg for commercial and industrial use. They are ideal for hot oil storage
+                project, dairies, beverage factory, breweries, restaurant kitchen sterilization, textile printing and
+                dyeing
+                industry etc. It is the most energy saving and cost efficient way to heat water.
+
+
+            </p>
+            <a class="pro_btn" href="https://wa.me/919841145498" target="_blank">Chat on WhatsApp</a>
+        </div>
+
+        <div class="product_card product Commercial">
+            <div class="img">
+                <img src="own_img/c_pro_6.jpg" alt="">
+            </div>
+            <h2>Swimming Pool Heat Pump
+            </h2>
+            <p>
+                Swimming Pool Heat Pumps are high capacity heating systems that can raise the temperature of the
+                swimming
+                pool water from ambient to a set temperature (27 ~ 35°C) and maintain the temperature. These heat pumps
+                find
+                their application in swimming pools in clubs, resorts and bungalows.
+            </p>
+            <a class="pro_btn" href="https://wa.me/919841145498" target="_blank">Chat on WhatsApp</a>
+        </div>
+
+    </div>
+
+</div>
+<!-- ends products-->
+
+
 <!-- Facts Start -->
 <div class="container-fluid facts my-5 p-5">
     <div class="row g-5">
@@ -257,6 +400,16 @@
     </div>
 </div>
 <!-- Facts End -->
+
+<!-- working PDF -->
+<div class="pdf">
+    <h1 style="text-align: center; ">Working catalog</h1>
+    <embed src="own_img/HP.pdf#zoom=page-width" frameborder="0" class="hp_pdf" style="border: none;"></embed>
+
+    <a href="own_img/HP.pdf" class="pro_btn"  download="Working catalog">Download Working catalog</a>
+</div>
+
+<!-- end of working PDF -->
 
 
 <!-- Features Start -->
@@ -619,7 +772,7 @@
 
 
 <!-- Footer Start -->
-<div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="container-fluid footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-lg-3 col-md-6">
@@ -673,6 +826,22 @@
 <!-- Back to Top -->
 <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
+
+<script>
+    function filterProducts(category) {
+        var products = document.querySelectorAll('#product-list .product');
+        products.forEach(function (product) {
+            if (category === 'all' || product.classList.contains(category)) {
+                product.classList.remove('hidden');
+            } else {
+                product.classList.add('hidden');
+            }
+        });
+    }
+
+    // Show all products by default
+    filterProducts('all');
+</script>
 
 <!-- JavaScript Libraries -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

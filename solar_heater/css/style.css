@@ -579,3 +579,11 @@
 .pro_img{
     width: 100%;
 }
+
+.price h2{
+    color: var(--primary);
+}
+
+.price h4{
+    text-decoration: underline var(--primary) solid 3px;
+}

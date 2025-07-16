@@ -584,6 +584,14 @@
     color: var(--primary);
 }
 
+.price h2::after{
+    content: "* ";
+}
+
 .price h4{
     text-decoration: underline var(--primary) solid 3px;
+}
+
+.highlight{
+    color: orange;
 }

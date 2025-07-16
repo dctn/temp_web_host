@@ -595,3 +595,13 @@
 .highlight{
     color: orange;
 }
+
+.main_logo{
+    width: 150px;
+}
+
+@media (min-width: 900px) {
+    .main_logo{
+        width: 250px;
+    }
+} 

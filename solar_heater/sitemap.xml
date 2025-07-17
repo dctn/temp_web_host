@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://saliceexim.com/</loc>
+    <lastmod>2025-07-17</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://saliceexim.com/about.html</loc>
+    <lastmod>2025-07-17</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://saliceexim.com/contact.html</loc>
+    <lastmod>2025-07-17</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://saliceexim.com/feature.html</loc>
+    <lastmod>2025-07-17</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://saliceexim.com/project.html</loc>
+    <lastmod>2025-07-17</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://saliceexim.com/service.html</loc>
+    <lastmod>2025-07-17</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://saliceexim.com/team.html</loc>
+    <lastmod>2025-07-17</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://saliceexim.com/quote.html</loc>
+    <lastmod>2025-07-17</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://saliceexim.com/testimonial.html</loc>
+    <lastmod>2025-07-17</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://saliceexim.com/404.html</loc>
+    <lastmod>2025-07-17</lastmod>
+    <priority>0.10</priority>
+  </url>
+  <!-- Add more URLs as you add more pages -->
+</urlset>
+

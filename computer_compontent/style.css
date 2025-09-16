@@ -63,18 +63,17 @@ CSS STRUCTURE:
 :root {
   --accent-color: #333;
   --black-color: #000;
-  --dark-color: #4C5354;
+  --dark-color: #4c5354;
   --primary-color: #4d7b6b;
   --primary-color-200: #e8f1ec;
   --primary-color-400: #e8f1ed;
-  --gray-color: #777F81;
-  --bs-gray-300: #DCDCDC;
+  --gray-color: #777f81;
+  --bs-gray-300: #dcdcdc;
   --bs-light-rgb: rgba(255, 255, 255, 1);
   --bs-primary-rgb: rgb(77, 122, 107);
   --light-color: #fff;
   --swiper-theme-color: #111 !important;
-  --cadet-blue-color: #9AB4B7;
-
+  --cadet-blue-color: #9ab4b7;
 }
 
 /* on mobile devices below 600px
@@ -120,7 +119,7 @@ body {
 }
 
 ul.inner-list li,
-ul>li {
+ul > li {
   color: var(--dark-gray-color);
 }
 
@@ -285,7 +284,6 @@ strong {
 }
 
 @media only screen and (max-width: 768px) {
-
   .margin-small,
   .margin-medium,
   .margin-large {
@@ -415,7 +413,7 @@ h5.light {
 
 .btn.btn-full {
   display: block;
-  margin: .85em 0;
+  margin: 0.85em 0;
   width: 100%;
   letter-spacing: 0.12em;
 }
@@ -517,7 +515,7 @@ h5.light {
   background-color: transparent;
 }
 
-.navbar-nav ul.dropdown-menu>li {
+.navbar-nav ul.dropdown-menu > li {
   font-size: 1em;
 }
 
@@ -581,7 +579,7 @@ form.search-form svg.search {
 }
 
 div#navbar-primary {
-  box-shadow: 0px 2px 40px rgba(8, 70, 78, 0.10);
+  box-shadow: 0px 2px 40px rgba(8, 70, 78, 0.1);
 }
 
 .navbar-nav li.nav-item {
@@ -712,13 +710,12 @@ section#intro {
 }
 
 #our-services .icon-box:hover {
-  box-shadow: 0px 2px 40px rgba(8, 70, 78, 0.10);
+  box-shadow: 0px 2px 40px rgba(8, 70, 78, 0.1);
   margin-top: -3px;
 }
 
 #our-services .service-icon-box {
-  box-shadow: 0px 2px 40px rgba(8, 70, 78, 0.10);
-
+  box-shadow: 0px 2px 40px rgba(8, 70, 78, 0.1);
 }
 
 @media only screen and (max-width: 1399px) {
@@ -736,7 +733,6 @@ section#intro {
     font-size: 1.8em;
   }
 }
-
 
 /* 4.4 Book Appointment Section
 /*----------------------------------------------*/
@@ -795,7 +791,7 @@ section#intro {
   bottom: 118px;
 }
 
-.testimonial-swiper .swiper-horizontal>.swiper-pagination-bullets,
+.testimonial-swiper .swiper-horizontal > .swiper-pagination-bullets,
 .testimonial-swiper .swiper-pagination-bullets.swiper-pagination-horizontal,
 .testimonial-swiper .swiper-pagination-custom,
 .testimonial-swiper .swiper-pagination-fraction {
@@ -817,7 +813,7 @@ section#intro {
 
 /* 4.6 Our Team Section
 /*----------------------------------------------*/
-#our-team .swiper-horizontal>.swiper-pagination-bullets,
+#our-team .swiper-horizontal > .swiper-pagination-bullets,
 #our-team .swiper-pagination-bullets.swiper-pagination-horizontal,
 #our-team .swiper-pagination-custom,
 #our-team .swiper-pagination-fraction {
@@ -853,7 +849,6 @@ section#intro {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='minus' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-
 
 /* 4.8 Tabs- Department Section
 /*----------------------------------------------*/
@@ -898,7 +893,6 @@ section#intro {
   }
 }
 
-
 /* 4.9 Blog Section
 /*----------------------------------------------*/
 .post-grid .card-image span {
@@ -907,7 +901,6 @@ section#intro {
   padding: 5px 15px;
   letter-spacing: 1.2px;
 }
-
 
 /* 4.10 Brand Section
 /*----------------------------------------------*/
@@ -922,7 +915,6 @@ section#intro {
 #brand-collection .col:hover .top-image {
   display: none;
 }
-
 
 /* 4.11 Subscribe Section
 /*----------------------------------------------*/
@@ -972,7 +964,6 @@ section#intro {
   }
 }
 
-
 /*--------------------------------------------------------------
 blog page style start
 --------------------------------------------------------------*/
@@ -1002,8 +993,6 @@ blog page style start
   color: var(--dark-color);
 }
 
-
-
 /*--------------------------------------------------------------
 reviews page style start
 --------------------------------------------------------------*/
@@ -1017,8 +1006,6 @@ iconify-icon.quote {
   font-size: 60px;
   color: var(--bs-primary-rgb);
 }
-
-
 
 /*--------------------------------------------------------------
   Price page style
@@ -1038,8 +1025,6 @@ span.price-tick {
 .recommend-price {
   background: var(--primary-color);
 }
-
-
 
 /*--------------------------------------------------------------
   Gallery page style
@@ -1064,8 +1049,6 @@ button.filter-button.gallery-btn:hover {
   border: 2px solid var(--black-color);
 }
 
-
-
 /*--------------------------------------------------------------
   Booking page style
   --------------------------------------------------------------*/
@@ -1073,8 +1056,6 @@ button.filter-button.gallery-btn:hover {
   border: 2px solid var(--black-color);
   box-shadow: none;
 }
-
-
 
 /*--------------------------------------------------------------
   Department page style
@@ -1084,7 +1065,7 @@ span.price-tick {
 }
 
 @media screen and (max-width: 600px) {
-  .medical-department-tab{
+  .medical-department-tab {
     flex-direction: column;
     padding: 2rem;
   }
@@ -1092,30 +1073,49 @@ span.price-tick {
   .department-details .col-md-6 {
     max-width: 100%;
   }
-  .medical-department-tab .nav-tabs{
+  .medical-department-tab .nav-tabs {
     flex-direction: row;
     margin: 2rem 0;
   }
 
   /* .medical-department-tab .nav-tabs .nav-link{ */
-    /*  */
+  /*  */
   /* } */
-  
-}
 
- .brand_img{
-    width: 10rem;
+  .testimonial_content {
+    padding: 0;
+    margin: 0;
   }
 
+  .swiper-wrapper {
+    height: 400px !important;
+  }
 
-.main_intro{
+  .opacity-0{
+    opacity: 0;
+  }
+}
+
+.brand_img {
+  width: 10rem;
+}
+
+.main_intro {
   margin: 5rem 0;
 }
 .main_intro .banner-content {
   background-color: rgba(0, 0, 0, 0.5);
-} 
+}
 
-.banner-content{
+.banner-content {
   padding: 2rem;
   border-radius: 2rem;
+}
+
+.first_name {
+  margin: 1rem 0;
+}
+
+.main_btn {
+  margin: 0;
 }

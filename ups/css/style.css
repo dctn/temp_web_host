@@ -900,3 +900,11 @@
 /*** copyright end ***/
 
 
+
+/*  own css */
+.main_img{
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    object-position: bottom;
+}

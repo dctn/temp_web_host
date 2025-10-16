@@ -18,8 +18,8 @@
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
-  --bs-primary: #00d1f9;
-  --bs-secondary: #19409a;
+  --bs-primary: #ff0b00;
+  --bs-secondary: #ff0b00;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -2549,8 +2549,8 @@ fieldset:disabled .btn {
 }
 .btn-primary {
   color: #000;
-  background-color: #00d1f9;
-  border-color: #00d1f9;
+  background-color: #ff0b00;
+  border-color: #ff0b00;
 }
 .btn-primary:hover {
   color: #000;
@@ -6783,7 +6783,7 @@ fieldset:disabled .btn {
   word-break: break-word !important;
 }
 .text-primary {
-  color: #00d1f9 !important;
+  color: #ff0b00 !important;
 }
 .text-secondary {
   color: #19409a !important;
@@ -6825,7 +6825,7 @@ fieldset:disabled .btn {
   color: inherit !important;
 }
 .bg-primary {
-  background-color: #00d1f9 !important;
+  background-color: #ff0b00 !important;
 }
 .bg-secondary {
   background-color: #19409a !important;

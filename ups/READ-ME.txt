@@ -7,3 +7,9 @@
   =>  Template Author  : HTML Codex
 
   =>  Author Website   : https://htmlcodex.com
+
+  blue to red
+  - hero main img size decrease
+  logo added in nav
+  remove read btn in second section
+  5 year to 25 year experiance in third and forth section

@@ -1553,26 +1553,27 @@ a.btn-link.text-light:after {
   transform: scale(0.8);
 }
 
-
-
-.letters,
-.words {
-  position: absolute;
-  display: flex;
-  gap: clamp(80px, 20vw, 300px);
-}
-
-.letter {
-  font-size: clamp(80px, 20vw, 160px);
-}
-
-.words .word {
-  font-size: clamp(24px, 6vw, 90px);
-}
-
-/* Logo optimization */
-.intro_logo {
-  width: clamp(220px, 60vw, 600px);
-  will-change: transform, opacity;
-  transform: translateZ(0);
+/* mobile */
+@media (max-width: 768px) {
+  .letter, .words .word{
+    font-size: 27px;
+  }
+  .letters{
+    left: 10px;
+     gap: 100px;
+  }
+  
+  .word_left{
+    left: -140px;
+    top: -23px;
+  }
+  .word_right{
+    top: -23px;
+    left: -17px;
+  }
+  .intro_logo {
+    /* opacity: 1; */
+    width: 300px;
+    padding-right: 3rem;
+  }
 }

@@ -5,6 +5,7 @@ gsap.set(".left", { x: -400, opacity: 0 });
 gsap.set(".right", { x: 400, opacity: 0 });
 gsap.set(".words", { opacity: 0, scale: 1 });
 gsap.set(".left_word", { x: -50, });
+gsap.set(".num_2", { x: -50, opacity:0,scale:0.8, x: 270, });
  gsap.set(".intro_logo", {
     opacity: 0,
     scale: 0.9,
@@ -65,13 +66,20 @@ tl
     x: -150,
     duration: 0.4
   })
+// visible 2
+  .to(".num_2", {
+    // x: 0,
+    opacity: 1,
+    duration: 0.4
+  })
 
-  // Hide Ds
-  .to(".letters", {
+  // Hide Ds and num 2
+  .to([".letters",".num_2"], {
     opacity: 0,
     scale: 0.9,
     duration: 0.3
   })
+ 
 
    // Logo reveal (optimized)
     .to(".intro_logo", {

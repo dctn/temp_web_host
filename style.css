@@ -1504,6 +1504,7 @@ a.btn-link.text-light:after {
 }
 
 /* animation intro  */
+
 /* INTRO OVERLAY */
 .intro-overlay {
   position: fixed;
@@ -1522,7 +1523,7 @@ a.btn-link.text-light:after {
   gap: 300px;
 }
 
-.letter{
+.letter, .num_2{
   font-size: 160px;
   font-weight: 700;
   color: #f7931e;

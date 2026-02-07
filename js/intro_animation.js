@@ -19,12 +19,12 @@ function getResponsiveValues() {
                    isMobile ? window.innerWidth * 0.6 : 400,
     // Position to align D2 text with logo D2 position
     finalDPosition: isSmallMobile ? -110 : 
-                    isMobile ? -160 : -220,
+                    isMobile ? -160 : -270,
     finalNumPosition: isSmallMobile ? 25 : 
-                      isMobile ? -70 : 60,
+                      isMobile ? -70 : 70,
     // Y position adjustment for desktop vs mobile
     finalYPosition: isSmallMobile ? -20 : 
-                    isMobile ? -20 : -50,  // Desktop: 5, Mobile: -20
+                    isMobile ? -20 : -60,  // Desktop: 5, Mobile: -20
   };
 }
 

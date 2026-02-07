@@ -1504,8 +1504,10 @@ a.btn-link.text-light:after {
 }
 
 /* animation intro  */
+/* ========================================
+   INTRO OVERLAY - LOGO BEHIND D2
+   ======================================== */
 
-/* INTRO OVERLAY */
 .intro-overlay {
   position: fixed;
   inset: 0;
@@ -1514,67 +1516,94 @@ a.btn-link.text-light:after {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
-/* Letters */
-.letters, .words{
+/* Container for the D letters */
+.letters {
   position: absolute;
   display: flex;
-  gap: 300px;
+  gap: 0;
+  z-index: 3; /* D letters on TOP */
 }
 
-.letter, .num_2{
-  font-size: 160px;
+/* Individual D letters */
+.letter {
+  font-size: clamp(60px, 15vw, 100px);
   font-weight: 700;
   color: #f7931e;
+  line-height: 1;
+  will-change: transform, opacity;
+  position: absolute; /* So they can overlap */
 }
-/* words */
-.words .word{
-  font-size: 90px;
-  font-weight: 500;
-  color: rgb(102, 98, 98);
+
+/* Number 2 */
+.num_2 {
+  position: absolute;
+  font-size: clamp(60px, 15vw, 100px);
   font-weight: 700;
-  text-transform: uppercase;
+  color: #f7931e;
+  line-height: 1;
+  z-index: 3; /* Number 2 on TOP */
+  will-change: transform, opacity;
 }
 
-.word_left{
-  position: absolute;
-  left: -170px;
-  top: -70px;
-}
-.word_right{
-  position: absolute;
-  left: 290px;
-  top: -70px;
-}
-/* Logo */
+/* Logo - BEHIND the text */
 .intro_logo {
-  width: 600px;
-  opacity: 0;
-  transform: scale(0.8);
+  position: absolute;
+  width: clamp(250px, 50vw, 600px);
+  height: auto;
+  z-index: 1; /* Logo BEHIND everything */
+  will-change: transform, opacity;
+  pointer-events: none;
 }
 
-/* mobile */
+/* Main site (hidden initially) */
+#site {
+  opacity: 0;
+}
+
+/* ========================================
+   MOBILE OPTIMIZATIONS
+   ======================================== */
 @media (max-width: 768px) {
-  .letter, .words .word{
-    font-size: 27px;
-  }
-  .letters{
-    left: 10px;
-     gap: 100px;
+  .letter,
+  .num_2 {
+    font-size: clamp(40px, 12vw, 60px);
   }
   
-  .word_left{
-    left: -140px;
-    top: -23px;
-  }
-  .word_right{
-    top: -23px;
-    left: -17px;
-  }
   .intro_logo {
-    /* opacity: 1; */
-    width: 300px;
-    padding-right: 3rem;
+    width: clamp(200px, 60vw, 300px);
+    max-width: 90vw;
   }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .letter,
+  .num_2 {
+    font-size: clamp(35px, 10vw, 50px);
+  }
+  
+  .intro_logo {
+    width: clamp(180px, 70vw, 250px);
+  }
+}
+
+/* Landscape mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .letter,
+  .num_2 {
+    font-size: clamp(30px, 8vh, 50px);
+  }
+  
+  .intro_logo {
+    width: clamp(150px, 40vw, 300px);
+  }
+}
+
+/* Performance optimizations */
+.intro-overlay * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

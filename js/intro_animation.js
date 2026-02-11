@@ -31,6 +31,11 @@ function getResponsiveValues() {
 const values = getResponsiveValues();
 
 // Initial states
+
+gsap.set(".intro-overlay", {
+  backgroundColor: "#000"
+});
+
 gsap.set(".left", { 
   x: -values.slideDistance, 
   opacity: 0 
@@ -84,6 +89,7 @@ tl
     duration: 0.2
   })
 
+  
   // 5. Number "2" appears next to D
   .to(".num_2", {
     opacity: 1,
@@ -91,6 +97,13 @@ tl
     duration: 0.5,
     ease: "back.out(1.7)"
   })
+
+  // bg color change
+  .to(".intro-overlay", {
+  backgroundColor: "#fff",
+  duration: 0.6,
+  ease: "power2.inOut"
+}, "<") 
 
   // 6. D2 container moves to EXACT logo position
   .to(".d2_container", {

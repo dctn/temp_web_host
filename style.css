@@ -1502,109 +1502,53 @@ a.btn-link.text-light:after {
   object-fit: contain;
   border-radius: 30px;
 }
-
-/* animation intro  */
-/* ========================================
-   INTRO OVERLAY - LOGO BEHIND D2
-   ======================================== */
-
+/* Intro Video Overlay */
+/* Overlay */
 .intro-overlay {
   position: fixed;
   inset: 0;
-  background: #000;
+  background: #ffffff;
   z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  opacity: 1;
+  transition: opacity 1s ease;
   overflow: hidden;
-  transition: background-color 0.6s ease;
 }
 
-/* Container for the D letters */
-.letters {
+/* Video base */
+.intro-overlay video {
   position: absolute;
-  display: flex;
-  gap: 0;
-  z-index: 3; /* D letters on TOP */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.05);
+  max-width: 100%;
+  max-height: 100%;
 }
 
-/* Individual D letters */
-.letter {
-  font-size: clamp(60px, 15vw, 100px);
-  font-weight: 700;
-  color: #f7931e;
-  line-height: 1;
-  will-change: transform, opacity;
-  position: absolute; /* So they can overlap */
+/* ✅ DESKTOP */
+@media (min-width: 768px) {
+  .intro-overlay video {
+    width: auto;
+    height: 100%;
+    object-fit: contain; /* no crop */
+  }
 }
 
-/* Number 2 */
-.num_2 {
-  position: absolute;
-  font-size: clamp(60px, 15vw, 100px);
-  font-weight: 700;
-  color: #f7931e;
-  line-height: 1;
-  z-index: 3; /* Number 2 on TOP */
-  will-change: transform, opacity;
+/* ✅ MOBILE FIX (IMPORTANT) */
+@media (max-width: 767px) {
+  .intro-overlay video {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* 🔥 no cropping */
+    transform: translate(-50%, -50%) scale(1); /* remove zoom */
+  }
 }
 
-/* Logo - BEHIND the text */
-.intro_logo {
-  position: absolute;
-  width: clamp(250px, 50vw, 600px);
-  height: auto;
-  z-index: 1; /* Logo BEHIND everything */
-  will-change: transform, opacity;
-  pointer-events: none;
-}
-
-/* Main site (hidden initially) */
+/* Site hidden */
 #site {
   opacity: 0;
-}
-
-/* ========================================
-   MOBILE OPTIMIZATIONS
-   ======================================== */
-@media (max-width: 768px) {
-  .letter,
-  .num_2 {
-    font-size: clamp(40px, 12vw, 60px);
-  }
-  
-  .intro_logo {
-    width: clamp(200px, 60vw, 300px);
-    max-width: 90vw;
-  }
-}
-
-/* Small mobile devices */
-@media (max-width: 480px) {
-  .letter,
-  .num_2 {
-    font-size: clamp(35px, 10vw, 50px);
-  }
-  
-  .intro_logo {
-    width: clamp(180px, 70vw, 250px);
-  }
-}
-
-/* Landscape mobile */
-@media (max-height: 500px) and (orientation: landscape) {
-  .letter,
-  .num_2 {
-    font-size: clamp(30px, 8vh, 50px);
-  }
-  
-  .intro_logo {
-    width: clamp(150px, 40vw, 300px);
-  }
-}
-
-/* Performance optimizations */
-.intro-overlay * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  transition: opacity 1s ease;
 }
